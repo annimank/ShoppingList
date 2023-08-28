@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, KeyboardAvoidingView } from 'react-native'; // Import KeyboardAvoidingView
+import Footer from './components/Footer';
+import ShoppingList from './components/ShoppingList';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <KeyboardAvoidingView style={styles.container} behavior="padding" keyboardVerticalOffset={-500}>
+      <ShoppingList />
+      <Footer />
+    </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#DBCABC',
+    justifyContent: 'center', // Center vertically
+    paddingTop: 20, // Add paddingTop to push the content down
   },
 });
