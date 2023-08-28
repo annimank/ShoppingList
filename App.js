@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, KeyboardAvoidingView } from 'react-native'; // Import KeyboardAvoidingView
+import { StyleSheet, KeyboardAvoidingView } from 'react-native';
 import Footer from './components/Footer';
 import ShoppingList from './components/ShoppingList';
 
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#DBCABC',
-    justifyContent: 'center', // Center vertically
-    paddingTop: 20, // Add paddingTop to push the content down
+    justifyContent: 'center', 
+    paddingTop: 20, 
   },
 });
